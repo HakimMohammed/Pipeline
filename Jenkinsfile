@@ -1,5 +1,5 @@
 node {
-    def mvnHome
+    def mvnHome = tool 'M3'
     stage('Preparation') { // for display purposes
         // Get some code from a GitHub repository
         git 'https://github.com/jglick/simple-maven-project-with-tests.git'
